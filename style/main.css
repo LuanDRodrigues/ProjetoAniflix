@@ -1,0 +1,111 @@
+:root{
+    --fundoPri: :linear-gradient(76,0,0,0.5);
+    --fundoSec: #c9c9c998;
+    --botao: rgb(240, 170, 66);
+    --botao2: #d86d09;
+}
+
+
+/* ELEMENTOS BASE */
+body{
+    background-color: var(--fundoPri);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+    height: 100vh;
+    width: 100vw;
+}   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    background-color: var(--fundoSec);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+header .logo{
+    color: var(--botao);
+    font-family:'Kalam', cursive;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--botao2);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+/* FILME PRINCIPAL */
+.anime-principal{
+    font-size: 16px;
+    min-height: 60vh;
+    background:linear-gradient(-72deg, rgba(255, 255, 255, 0.055) 1%,rgba(24, 20, 0, 0.692) 99%), url(/img/CAPA_1.jpg);
+    text-align: justify;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.anime-principal .titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.anime-principal .container{
+    text-size-adjust: auto;
+    margin-left: 5px;
+}
+
+.anime-principal .descricao{
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 5px;
+
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: var(--botao);
+    color: #0D0D0D;
+    border-radius: 5px;
+    margin: 10px;
+    border-right: var(--botao2);
+    border-bottom: var(--botao2);
+}
+
+.carousel-filmes{
+    padding: 15px 5px;
+    background: linear-gradient(-72deg, rgba(207, 201, 201, 0.596) 1%,rgba(247, 216, 63, 0.692) 99%);
+}
+
+.box-filme{
+    height: 200px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
